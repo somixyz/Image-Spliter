@@ -30,9 +30,9 @@ public class SplitImage {
     }
 
     public static void main(String args[]) throws IOException { 
-            BufferedImage bi = ImageIO.read(new File("0.jpg"));
-            int rcount = Integer.parseInt("4");
-            int ccount = Integer.parseInt("3");
+            BufferedImage bi = ImageIO.read(new File("0.jpg"));  // add image 
+            int rcount = Integer.parseInt("4");  // add rows
+            int ccount = Integer.parseInt("3");  // add columns
             Image img = bi.getScaledInstance(bi.getWidth(), bi.getHeight(), BufferedImage.TYPE_INT_RGB);
             BufferedImage[] imgs = SplitImage.getImages(img, rcount, ccount);
             for(int i=0; i < imgs.length; i++){
