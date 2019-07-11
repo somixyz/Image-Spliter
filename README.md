@@ -1,4 +1,4 @@
-# Split-Image-Into-Multiple-Images
+# Image Spliter
 Java program by which you can split an Image to multiple images
 
 
